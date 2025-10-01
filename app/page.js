@@ -1,12 +1,19 @@
 import Link from 'next/link';
-import Header from './component/header';
+
 export default function Home() {
   return (
     <main>
-      <Header />
-      <p>🔥 Let&apos;s get started! 🔥</p>
+      <h1 style={{ color: 'white', textAlign: 'center' }}>
+        Time to get started!
+      </h1>
       <p>
-        <Link href="/about">About Us</Link>
+        <Link href="/meals">Meals</Link>
+      </p>
+      <p>
+        <Link href="/meals/share">Share Meal</Link>
+      </p>
+      <p>
+        <Link href="/community">Community</Link>
       </p>
     </main>
   );
